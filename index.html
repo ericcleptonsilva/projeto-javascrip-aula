@@ -6,7 +6,15 @@
 <script  src="./js/main.js"></script>
     <title>1ª Aula</title>
 </head>
-<body>
-   
+<body onload="loade()">
+    <button type="button" onclick="clicou()">Clique aqui!! </button>
+    <h3 id="clicou" onclick="redirecionar()"></h3>
+    <h3 id="troca" onmousemove="trocar(this)" onmouseout="voltar(this)">Passe o Mouse aqui!</h3>
+    <select onchange="change(this)">
+        <option value="1">Valor: 01</option>
+        <option value="2">Valor: 02</option>
+        <option value="3">Valor: 03</option>
+    </select>
+    <p id="valor"></p>
 </body>
 </html>
